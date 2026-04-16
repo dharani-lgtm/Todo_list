@@ -9,3 +9,15 @@ def add_task(task):
 add_task("Buy groceries")
 add_task("Complete homework")
 print(f"Total Tasks: {len(tasks)}")
+
+
+def view_tasks():
+    if len(tasks) == 0:
+        print("No tasks found!")
+    else:
+        print("\nAll Tasks:")
+        for i, task in enumerate(tasks, start=1):
+            print(f"{i}. {task}")
+
+# Test
+view_tasks()
